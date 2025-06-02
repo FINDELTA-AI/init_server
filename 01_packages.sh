@@ -15,6 +15,7 @@ apt remove --purge -y apache2 mysql-server || true
 apt autoremove -y
 
 echo "📦 Обновление системы..."
+apt-mark hold python3    # 🔒 Зафиксировать Python 3.10
 apt update && apt upgrade -y
 
 echo "🔧 Установка вспомогательных утилит..."
