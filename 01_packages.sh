@@ -26,7 +26,7 @@ wget -qO - https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor -o
 echo "deb [signed-by=/usr/share/keyrings/postgresql.gpg] http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 
 echo "🧠 Добавление PPA Redis 7..."
-export DEBIAN_FRONTEND=noninteractive
+# export DEBIAN_FRONTEND=noninteractive
 add-apt-repository -y ppa:redislabs/redis
 
 
