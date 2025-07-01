@@ -15,6 +15,8 @@ server {
     listen 80;
     server_name $PROJECT_NAME;
 
+    client_max_body_size 100M;
+
     location = /favicon.ico { access_log off; log_not_found off; }
 
     location /static/ {
